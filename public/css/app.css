@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #2D8205;
+}
+
+/* navbar */
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-link {
+  width: 80%;
+  margin: auto;
+
+}
+
+.links li {
+  padding: 14px;
+  font-weight: bold;
+  font-size: 17px;
+  /* font-family: inherit; */
+}
+
+.logo {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.button {
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.button:hover {
+  border-color: #559f35;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (min-width:775px) {
+  .links-bar {
+    display: block !important;
+  }
+}
+
+
+@media (max-width: 775px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .links-bar {
+    display: none;
+    z-index: 999;
+  }
+
+  .links {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .links li {
+    margin: 10px 0;
+  }
+
+  .links li a {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .links.active {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+  }
+
+  .links li:hover {
+    background-color: #504f4f;
+
+  }
+
+
+}
